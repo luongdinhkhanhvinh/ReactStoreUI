@@ -1,13 +1,15 @@
 import React from 'react';
 import {View} from 'react-native';
 
-const CardContent = props => {
+const Row = props => {
   const {style} = props;
   const defaultStyle = {
-    padding: props.padding || props.padding === 0 ? props.padding : 10,
+    flexDirection: 'row',
+    marginHorizontal: props.nomargin === true ? 0 : -10,
+    flex: 1,
   };
 
   return <View style={[defaultStyle, style]}>{props.children}</View>;
 };
 
-export default CardContent;
+export default Row;

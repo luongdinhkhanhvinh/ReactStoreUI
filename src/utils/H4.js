@@ -4,10 +4,9 @@ import config from '../styles/config.styles';
 
 const H4 = props => {
   const {style} = props;
-
   const defaultStyle = {
     fontFamily: config.headingFont,
-    fontSize: config.headingFontSize * 1.25,
+    fontSize: config.defaultFontSize * 1.25,
     marginBottom: 10,
     color: config.defaultFontColor,
   };

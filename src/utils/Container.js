@@ -1,13 +1,13 @@
 import React from 'react';
 import {View} from 'react-native';
 
-const CardContent = props => {
+const Container = props => {
   const {style} = props;
   const defaultStyle = {
-    padding: props.padding || props.padding === 0 ? props.padding : 10,
+    paddingHorizontal: 15,
   };
 
   return <View style={[defaultStyle, style]}>{props.children}</View>;
 };
 
-export default CardContent;
+export default Container;

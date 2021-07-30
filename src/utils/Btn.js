@@ -1,7 +1,8 @@
 import React from 'react';
-import {Touchable} from 'react-native';
-import P from './P';
 import config from '../styles/config.styles';
+import {Touchable} from './Touchable';
+import {P} from './P';
+
 const Btn = props => {
   let {style} = props;
   if (!style) {

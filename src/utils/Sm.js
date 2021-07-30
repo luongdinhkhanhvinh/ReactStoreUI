@@ -1,17 +1,17 @@
 import React from 'react';
 import {Text} from 'react-native';
-import config from '../styles/config.styles';
+import config from '../../config';
 
-const H1 = props => {
+const Sm = props => {
   const {style} = props;
   const defaultStyle = {
-    fontFamily: config.headingFont,
-    fontSize: config.defaultFontSize * 2,
-    marginBottom: 15,
+    fontFamily: config.defaultFont,
+    fontSize: config.defaultFontSize * 0.85,
+    marginBottom: 2,
     color: config.defaultFontColor,
   };
 
   return <Text style={[defaultStyle, style]}>{props.children}</Text>;
 };
 
-export default H1;
+export default Sm;
